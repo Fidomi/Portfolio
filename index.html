@@ -3,22 +3,24 @@
 <html lang="fr">
   
   <head>
+
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap v5.0 CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <!-- Bootstrap v4.5 CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 
     <!-- Fontawesome -->
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 
-    <!-- Mon style CSS -->
-    <link rel="stylesheet" type="text/css" href="style.css">
 
     <!-- Mes fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,400;0,500;1,300;1,400;1,500&family=Josefin+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <!-- Mon style CSS -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 
     <title>Sidonie Moulart</title>
   </head>
@@ -26,19 +28,60 @@
 
   <body>
 
-    <!-- HEADER - NAVIGATION -->     
-    <header class="container-fluid jaune" >
-      
-      <div class="container navbar sticky-top">
-        
-        <nav>
-             <a href="#apropos"><h2> Sidonie Moulart </h2></a>
-             <a class="navigation" href="#developpement">Développement Web</a>
-             <a class="navigation" href="#motionDesign">Motion Design VFX</a>
-             <a class="navigation" href="#contact">Contact</a>
-         </nav>
+    <!-- HEADER - NAVIGATION -->
+    <!-- HEADER - NAVIGATION -->
+    <!-- HEADER - NAVIGATION -->
+    <!-- HEADER - NAVIGATION -->
+    <!-- HEADER - NAVIGATION -->
+
+
+
+    <header class="container-fluid bg-jaune" >
+
+
+    <div class="container" >
+    <nav class="navbar navbar-expand-md navbar-dark" id="menu">
+
+
+        <a class="navbar-brand " href="#">Sidonie Moulart</a>
+
+        <div class="d-inline ml-auto">
+          <a class="navbar-brand d-inline d-md-none" href="mailto:sidonie.moulart@gmail.com"><i class="fas fa-envelope"></i></a>
+
+          <a class="navbar-brand d-inline d-md-none" href="tel:0033663915267"><i class="fas fa-phone"></i></a>
+        </div>
+
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+         </button>
+   
+         <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+           <ul class="navbar-nav active">
+
+              <li class="nav-item">
+                 <a class="nav-link" href="#developpement">Développement Web</a>
+              </li>
+
+             
+              <li class="nav-item">
+                 <a class="nav-link" href="#motionDesign">MotionDesign & VFX</a>
+              </li>
+
+              <li class="nav-item" >
+                 <a class="nav-link" href="#contact" id="navContact">Contact</a>
+              </li>
+     
+           </ul>
+     
+              <span><i class="zmdi zmdi-phone animated infinite pulse zmdi-hc-fw" style="font-size:48px;"></i></span>
+           </div>
+
+      </nav>
       </div>
-      
+
+
+   
     </header>  
 
 
@@ -52,26 +95,40 @@
       A PROPOS  ************************** A PROPOS  **************************
       A PROPOS  ************************** A PROPOS  **************************-->  
 
-      <section class="container-fluid blanc" >
+      <section class="container-fluid bg-blanc py-5" >
         
           <div class="container">
 
-            <h2> Bonjour, je m'appelle Sidonie. Je suis Développeuse Web Junior. </h2>
+            <div class="row">
+              <div class="col-5 apropos">
+                  <h2> Bonjour,</h2>
+                  <h2> je m'appelle</h2>
+                  <h2 id="sidonie"class="d-inline"> Sidonie.</h2>
+                  <h2> Je suis </h2>
+              </div>
 
-            <img src="./images/SidonieM.png">
+            <img class="col-7" id="portrait" src="./images/Portrait.png">
+            </div>
 
-            <article>
+            <div class="row" id="developpeuse">Développeuse Web Front-End.</div>
+
+            
+
+            <article class="row pt-5 pb-2">
           
-              <p>Aujourd’hui je suis une étudiante enthousiaste en développement web et web mobile et je recherche mon stage de mi-cursus de février à avril 2021.</p>
+              <p class="col-12"><strong>Aujourd’hui</strong> je suis une étudiante enthousiaste en développement web et web mobile et je recherche mon stage de mi-cursus de février à avril 2021.</p>
             
-              <p>Hier j’étais infographiste dans les effets spéciaux numériques pour le cinéma.</p>
+              <p class="col-12"><strong>Hier</strong> j’étais infographiste dans les effets spéciaux numériques pour le cinéma.</p>
             
-              <p>Demain j’aimerais concevoir et coder des applications web permettant des expériences immersives (webXR). </p>
+              <p class="col-12"><strong>Demain</strong> j’aimerais concevoir et coder des applications web permettant des expériences immersives (webXR). </p>
           
             </article>
 
+            <hr class="newHr row">
+
+
             <blockquote cite="https://brendanmarchal.medium.com/berners-lee-r%C3%A9pond-aux-questions-des-enfants-5fe682b72d95">
-              “Utilisons le Web pour aider les gens à se comprendre!” --- Tim Berners Lee - W3.ORG
+              “Utilisons le Web pour aider les gens à se comprendre!”<br><p id="signature"> --- Tim Berners Lee - W3.ORG</p>
             </blockquote>
 
           </div>
@@ -88,21 +145,21 @@
 *********************DEVELOPPEMENT WEB********************************
 *********************DEVELOPPEMENT WEB********************************  
 *********************DEVELOPPEMENT WEB******************************** --> 
-      <section class="container-fluid jaune" >
+      <section class="container-fluid bg-jaune" id="developpement" >
 
-          <h2> Développement Web</h2>
+          <h2 class="row"> Développement Web</h2>
 
           <div></div>
           <div></div>
           <div></div>
 
-          <h3> Mes Compétences</h3>
+          <h3 class="row"> Mes Compétences</h3>
 
-          <p>Développement backend et frontend de sites et applications web : <br> HTML5 / CSS3, Javascript, PHP, Bootstrap, JQuery, NodeJS. </p>
+          <p class="row">Développement backend et frontend de sites et applications web : <br> <strong>HTML5 / CSS3, Javascript, PHP, Bootstrap, JQuery, NodeJS.</strong> </p>
 
-          <p>UML sur Merise, travail collaboratif sur Git et GitHub.<br>Wireframes et responsive webdesign sur Figma, Photoshop et Illustrator.</p>
+          <p class="row">UML avec Merise, travail collaboratif sur <strong>Git</strong> et GitHub.<br>Wireframes et responsive webdesign sur Figma, Photoshop et Illustrator.</p>
 
-          <p>Bonne gestion du temps, respect scrupuleux des délais, rigueur.<br>Capacité et appétence à travailler sur des sujets et des univers variés.</p>
+          <p class="row">Bonne gestion du temps, respect scrupuleux des délais, rigueur.<br>Capacité et appétence à travailler sur des sujets et des univers variés.</p>
   
       </section >
 
@@ -114,7 +171,7 @@
 **************MOTION DESIGN*********************************
 **************MOTION DESIGN*********************************
 **************MOTION DESIGN********************************* -->
-      <section class="container-fluid noir" >
+      <section class="container-fluid bg-noir" id="motionDesign" >
 
           <h2> Motion Design Vfx</h2>
 
@@ -142,7 +199,7 @@
 
     <footer class="container-fluid" >
 
-      <div class="container jaune">
+      <div class="container bg-jaune" id="contact">
         <h2>Contact</h2>
 
         <p>Sidonie Moulart</p>
@@ -164,8 +221,10 @@
 
 
     <!-- Optional JavaScript -->
-    <!-- Bootstrap JS Bundle including Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+        
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
 
   </body>
 </html>
