@@ -1,0 +1,22 @@
+.blanc{
+	background-color:#F5F5F4; 
+}
+
+.jaune{
+	background-color:#FFCD1C; 
+}
+
+.noir{
+	background-color:#000000; 
+	color : #F5F5F4;
+}
+
+body{
+	font-family: 'Josefin Sans', sans-serif;
+}
+
+h3, blockquote{
+	font-family: 'Cormorant', serif;
+}
+
+
