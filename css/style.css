@@ -30,6 +30,12 @@ h2{
 
 }
 
+h1{
+	font-family: 'Josefin Sans', sans-serif;
+	font-size:2em;
+
+}
+
 
 
 /***********Navbar*************/
@@ -79,6 +85,7 @@ a#navContact{
 
 
 
+
 /***********A propos*************/
 
 div.apropos{
@@ -103,6 +110,7 @@ img#portrait{
 	max-width:12rem;
 /*	background-color: blue;*/
     margin-bottom: -0.65rem;
+    z-index: 2;
 }
 
 
@@ -113,6 +121,7 @@ div#developpeuse
 	font-size:1.63rem;
 	justify-content:center;
 	padding: 0.2rem 0.5rem;
+	z-index: 1;
 }
 
 hr.newHr{
@@ -122,6 +131,7 @@ hr.newHr{
 blockquote{
 	font-style: oblique;
 	font-size : 1.8rem;
+	max-width:60%;
 }
 
 p#signature{
@@ -132,6 +142,42 @@ p#signature{
 
 
 
+/***********Developpement*************/
+
+.card{
+/*	padding:0.2rem 0.2rem;*/
+	margin:0.5rem 0.2rem;
+/*	background-color:#fff0 !important;*/
+	border:none;
+	max-width: 15rem;
+}
+
+
+div.gallerie{
+	align-items:center !important;
+	justify-content:center;
+}
+
+h4.card-title{
+	font-size:1.3rem;
+	margin-bottom: 0.3rem;
+	font-weight: 400;
+}
+
+p.card-text{
+	font-weight: 200;
+}
+
+.card-img{
+	min-height: 200px;
+	min-width: 200px;
+}
+
+div.text-black,
+div.text-warning2{
+	color:black;
+
+}
 
 
 
@@ -139,24 +185,71 @@ p#signature{
 
 
 
+/***********Motion Design*************/
+
+#titreBlanc{
+	color:rgb(255 255 255) !important;
+}
+
+section#motionDesign p{
+	font-weight: 200;
+    line-height: 1.35;
+}
 
 
 
+/***********Footer*************/
 
+footer{
+	padding:0 !important;
+}
+
+
+i.fas::before {
+	color:black;
+	font-size:1.35rem;
+	padding-left:0.7rem;
+}
+
+i.fab::before {
+	color:black;
+	font-size:3rem;
+	padding-left:0.7rem;
+}
+
+div#telMail{
+	margin-left : 15%;
+
+}
+
+div.centrer{
+	justify-content:center;
+}
+
+a{
+	color:black;
+}
+
+a:hover{
+	text-decoration:none;
+	color:black;
+
+}
 
 
 
 /***********Media Querries*************/
 
+
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {  
-  h1 {font-size:1.5rem;} /*1rem = 16px*/
+  h1 {font-size:2.2rem;} /*1rem = 16px*/
  
 }
  
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
 @media (min-width: 768px) {  
-  h1 {font-size:2rem;} /*1rem = 16px*/
+  h1 {font-size:2.2rem;} /*1rem = 16px*/
    a.navbar-brand {
 	font-size:1.3em;
 	font-weight: bold;
