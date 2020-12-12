@@ -40,13 +40,20 @@ h1{
 
 /***********Navbar*************/
 
+
+header{
+	padding-left: 5%;
+	padding-right: 5%;
+}
+
+
 .navbar{
 	margin:0rem 0rem 0rem 0rem !important;
     padding:0.5rem 0rem 0.5rem 0rem !important;
 }
 
 
-a.navbar-brand {
+.navbar-brand {
 	color: rgb(0 0 0)!important;
 	font-size:1.1em;
 	font-weight: normal;
@@ -89,10 +96,24 @@ a#navContact{
 /***********A propos*************/
 
 
-h2#sidonie{
+.py-6{
+	padding-top:6em;
+}
+
+.pb-6{
+	padding-bottom:6em;
+}
+
+
+.sidonie{
 	background-color:#FFCD1C; 
 	padding: 0.2rem 0.5rem;
 	margin-left: 0rem;
+}
+
+.stage{
+	background-color:#FF7B1C; 
+	padding: 0.2rem 0.5rem;
 }
 
 div#developpeuse
@@ -193,6 +214,22 @@ section#motionDesign p{
 	font-weight: 200;
     line-height: 1.35;
 }
+
+.fa-play-circle{
+	font-size:2em;
+	padding-right:0.1em;
+	cursor:pointer;
+	transition:0.5s,;
+}
+
+
+
+
+/*********** Modal et Video *************/
+
+iframe{
+    padding:1%;
+    	}
 
 
 

@@ -1,0 +1,118 @@
+/*******ANIMATION LIENS NAVLINKS*************/
+
+.navbar-brand,
+.nav-item a{
+  position: relative;
+  color: #000;
+  text-decoration: none;
+}
+
+.navbar-brand:hover,
+.nav-item a:hover {
+  color: #000;
+}
+
+.navbar-brand::before,
+.nav-item a::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  bottom: 0.5em;
+  left: 0;
+  background-color: #000;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out 0s;
+}
+
+#navContact::before{
+  background-color: #fff;
+}
+
+.navbar-brand:hover::before,
+.nav-item a:hover::before {
+  visibility: visible;
+  transform: scaleX(0.8);
+}
+
+.navbar-brand::before{
+  bottom: 0;
+}
+
+#navContact::before{
+  color: white;
+}
+
+.navbar-brand:hover::before,
+.nav-item a:hover::before {
+  visibility: visible;
+  transform: scaleX(0.8);
+}
+
+
+
+
+
+
+
+
+
+/*******ANIMATION RECHERCHE STAGE***********/
+
+span.stage {
+  animation-duration: 1s;
+  animation-name: changeColor;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes changeColor {
+  from {
+    background-color:rgba(255,123,28,1);
+  }
+
+  to {
+    background-color:rgba(255,123,28,0);
+  }
+}
+
+
+
+
+
+/************ANIMATIONS VIGNETTES************/
+
+.view-first img {
+  transition: all 0.2s linear;
+}
+
+.view-first p {
+  transform: translateY(100px);
+  opacity: 0;
+  transition: all 0.2s linear;
+}
+
+
+/*hover*/
+.view-first:hover img {
+  filter: grayscale(100%) invert(100%);
+}
+
+.view-first:hover h4,
+.view-first:hover p{
+  opacity: 1;
+  transform: translateY(0px);
+  color:white;
+}
+
+.view-first:hover i{
+  color:white;
+}
+
+.view-first:hover p {
+  transition-delay: 0.1s;
+}
+
+
+
